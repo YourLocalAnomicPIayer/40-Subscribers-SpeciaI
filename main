@@ -6,12 +6,12 @@ local webhookcheck =
    "Kid with shit exploit"
 
 local url =
-   "https://discord.com/api/webhooks/985048175113019462/E0l-lg_pcWcjRF_Z21FiaYX_Ke_Cu5myoz8fvBEi6tRTg14qWiCfRaS76ogdsz8RbT_J" -- put ur webhook here dumbos
+   "https://discord.com/api/webhooks/985048175113019462/E0l-lg_pcWcjRF_Z21FiaYX_Ke_Cu5myoz8fvBEi6tRTg14qWiCfRaS76ogdsz8RbT_J"
 local data = {
-   ["content"] = "Executed [SCRIPT NAME]",
+   ["content"] = "Executed [Local anomic gui]",
    ["embeds"] = {
        {
-           ["title"] = "**Someone Executed [SCRIPT NAME]** in: "   ..game:GetService("MarketplaceService"):GetProductInfo(game.PlaceId).Name.. " :)",
+           ["title"] = "**Someone Executed [Local anomic gui]** in: "   ..game:GetService("MarketplaceService"):GetProductInfo(game.PlaceId).Name.. " :)",
            ["description"] = "Username: " .. game.Players.LocalPlayer.Name.." with **"..webhookcheck.."**",
            ["type"] = "rich",
            ["color"] = tonumber(0x7269da),
